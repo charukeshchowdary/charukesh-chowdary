@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitGuide Chatbot</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <div>
+          <p class="eyebrow">FitGuide</p>
+          <h1>Nutrition & Workout Chatbot</h1>
+          <p class="subtitle">
+            Answer a few questions to get BMI-based guidance on eating and exercise.
+          </p>
+        </div>
+      </header>
+
+      <section class="chat" aria-live="polite" aria-label="Chat conversation">
+        <div class="chat__window" id="chatWindow"></div>
+        <form class="chat__form" id="chatForm">
+          <input
+            id="chatInput"
+            type="text"
+            placeholder="Type your answer..."
+            autocomplete="off"
+            aria-label="Chat input"
+            required
+          />
+          <button type="submit">Send</button>
+        </form>
+        <p class="helper">
+          Tip: type <span class="chip">restart</span> to begin again.
+        </p>
+      </section>
+
+      <section class="info">
+        <h2>How it works</h2>
+        <ul>
+          <li>Collects height, weight, goal, and activity level.</li>
+          <li>Calculates your BMI category.</li>
+          <li>Suggests nutrition and workout focus for cutting or bulking.</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
